@@ -45,7 +45,7 @@ export default function Homes() {
   }, [])
 
   return (
-    <div className="relative w-full h-[480px] md:h-[450px] overflow-hidden">
+    <div className="relative w-full h-[480px] md:h-[410px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}

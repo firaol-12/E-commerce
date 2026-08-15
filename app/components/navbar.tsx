@@ -2,6 +2,8 @@ import Link from "next/link"
 import Image from "next/image"
 import img1 from "../assets/search.png"
 import cart_img from "../assets/shopping-cart.png"
+import like from "../assets/heart.png"
+import user from "../assets/user (1).png"
 
 export default function Navbar() {
   return (
@@ -17,12 +19,18 @@ export default function Navbar() {
       </button>
       </div>
 
-      <div className="flex justify-center items-center gap-2">
-        <button className="px-2">Register</button>
-        <button className="px-2">Login</button>
-        <button className="rounded-full px-5 py-2">
-          <Image src={cart_img}  className="w-7 h-7" alt="" />
-        </button>
+      <div className="flex justify-center items-center gap-5">
+        <Link href="">
+          <Image src={like} alt="" className="w-6 h-6"></Image>
+        </Link>
+        
+        <Link href="">
+          <Image src={cart_img} alt="" className="w-6 h-6"></Image>
+        </Link>
+
+        <Link href="">
+          <Image src={user} alt="" className="w-6 h-6"></Image>
+        </Link>
       </div>
     </nav>
   )

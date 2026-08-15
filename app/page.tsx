@@ -3,6 +3,7 @@ import Category from "./components/category";
 import HomeProduct from "./components/home-product";
 import Login from "./login/page";
 import Register from "./register/page";
+import SingleProduct from "./components/single_product";
 export default function Home() {
   return (
     <div>
@@ -10,7 +11,8 @@ export default function Home() {
       <Category />
       <HomeProduct /> */}
       {/* <Login /> */}
-      <Register />
+      {/* <Register /> */}
+      <SingleProduct />
     </div>
   );
 }
