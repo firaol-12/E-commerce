@@ -17,7 +17,7 @@ export default function Login() {
                     <form action="" className="flex flex-col gap-4">
                         <button className="w-70 px-5 py-2 text-black border border-gray-400 rounded-2xl flex items-center justify-center gap-4">
                             <Image src={icon} alt="Google" className="w-5 h-5" />
-                            <span>Sign in with Google</span>
+                            <span>Continue with Google</span>
                         </button>
                         <p className=" text-center ">Or</p>
                         <input placeholder="Email" className="w-70 px-5 py-2 border border-gray-400 rounded-2xl" type="email" />
@@ -26,7 +26,7 @@ export default function Login() {
                         <button className="w-70 px-5 py-2 bg-blue-600 text-white rounded-2xl">Submit</button>
                         <div className="flex justify-center items-center gap-1">
                             <span>Don't have an account?</span>
-                            <a href="" className="text-blue-600 text-center ">Create one</a>
+                            <Link href="./register" className="text-blue-600 text-center ">Create one</Link>
                         </div>
                     </form>
                 </div>
