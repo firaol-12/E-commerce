@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
 
 import img1 from "../assets/product/1.png"
 import img2 from "../assets/product/2.png"
@@ -10,9 +9,9 @@ import img6 from "../assets/product/6.png"
 import img7 from "../assets/product/7.png"
 import img8 from "../assets/product/8.png"
 import cart from "../assets/shopping-cart.png"
+import Link from "next/link"
 
-
-export default function HomeProduct() {
+export default function Products() {
   const product = [
     {
       id: 1,
@@ -70,12 +69,95 @@ export default function HomeProduct() {
       rating: 5,
       img: img8,
     },
+    {
+      id: 9,
+      name: "Nike Air Max",
+      price: 120,
+      rating: 4.5,
+      img: img1,
+    },
+    {
+      id: 10,
+      name: "Adidas Ultraboost",
+      price: 150,
+      rating: 3,
+      img: img2,
+    },
+    {
+      id: 11,
+      name: "Nike Revolution",
+      price: 90,
+      rating: 5,
+      img: img3,
+    },
+    {
+      id: 12,
+      name: "Nike Air Max",
+      price: 120,
+      rating: 4.5,
+      img: img4,
+    },
+    {
+      id: 13,
+      name: "Adidas Ultraboost",
+      price: 150,
+      rating: 3,
+      img: img5,
+    },
+    {
+      id: 14,
+      name: "Nike Revolution",
+      price: 90,
+      rating: 5,
+      img: img6,
+    },
+    {
+      id: 15,
+      name: "Adidas Ultraboost",
+      price: 150,
+      rating: 3,
+      img: img7,
+    },
+    {
+      id: 16,
+      name: "Nike Revolution",
+      price: 90,
+      rating: 5,
+      img: img8,
+    },
+    {
+      id: 17,
+      name: "Nike Air Max",
+      price: 120,
+      rating: 4.5,
+      img: img1,
+    },
+    {
+      id: 18,
+      name: "Adidas Ultraboost",
+      price: 150,
+      rating: 3,
+      img: img2,
+    },
+    {
+      id: 19,
+      name: "Nike Revolution",
+      price: 90,
+      rating: 5,
+      img: img3,
+    },
+    {
+      id: 20,
+      name: "Nike Air Max",
+      price: 120,
+      rating: 4.5,
+      img: img4,
+    },
+
   ]
 
   return (
     <div className="">
-      <h3 className=" comfortaa text-orange-600 mt-5 ml-25">Get Products</h3>
-      <h2 className=" oswald ml-25 text-4xl">Explore our Products</h2>
 
       <div className="relative flex justify-center items-center flex-wrap  gap-12 mx-30 my-5">
         {product.map((item) => (
@@ -100,7 +182,7 @@ export default function HomeProduct() {
 
                 </div>
                 <button className="bg-amber-400 rounded-2xl w-10 h-10 flex justify-center items-center">
-                    <Image src={cart} className="w-7 h-7" alt="Add to Cart" />
+                    <Image src={cart} className="w-6 h-6" alt="" />
                 </button>
             </div>
           </Link>

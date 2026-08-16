@@ -45,7 +45,7 @@ export default function Homes() {
   }, [])
 
   return (
-    <div className="relative w-full h-[480px] md:h-[410px] overflow-hidden">
+    <div className="relative w-full h-[480px] md:h-[440px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -61,10 +61,10 @@ export default function Homes() {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/30 flex flex-col items-start justify-center md:px-40">
-            <h1 className="text-white text-3xl md:text-5xl font-bold">
+            <h1 className="hero-font text-white text-5xl md:text-6xl font-bold">
               {slide.heading}
             </h1>
-            <p className="text-white/90 mt-3 max-w-md">{slide.text}</p>
+            <p className="text-white/90 mt-3  comfortaa text-2xl">{slide.text}</p>
             <button className="mt-6 px-6 py-3 bg-white text-black rounded-full font-medium">
               Shop Now
             </button>

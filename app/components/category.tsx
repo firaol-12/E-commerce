@@ -5,6 +5,7 @@ import img3 from "../assets/cap.png"
 import img4 from "../assets/running-shoes.png"
 import img5 from "../assets/shirt.png"
 import img6 from "../assets/dress-long-and-black-shape.png"
+import Link from "next/link"
 
 export default function Category() {
 
@@ -47,13 +48,14 @@ export default function Category() {
   ]
   return (
     <div className="flex flex-col items-start justify-start">
-      <h3 className=" mt-5 ml-25">Categories</h3>
-      <h2 className=" ml-25 text-4xl">Browse by Category</h2>
+      <h3 className="comfortaa text-orange-600 mt-5 ml-25">Categories</h3>
+      <h2 className=" oswald ml-25 text-4xl">Browse by Category</h2>
 
       <div className=" my-5 flex items-center justify-center gap-10 w-full">
         {
           product.map((index)=>(
-            <div 
+            <Link
+            href="/products"
             key={index.id}
             className="flex justify-around  items-center rounded-2xl shadow-xl hover:shadow-2xl w-45 h-20">
             <Image
@@ -62,7 +64,7 @@ export default function Category() {
               alt="Category 1"
             />
             <p>{index.titel}</p>
-          </div>
+          </Link>
           ))
         }
         

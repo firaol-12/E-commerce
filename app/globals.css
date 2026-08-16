@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Comfortaa:wght@300..700&family=Oswald:wght@200..700&display=swap');
 @import "tailwindcss";
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -27,4 +27,27 @@ body {
 
 button{
   cursor: pointer;
+}
+
+.hero-font {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comfortaa{
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.archivo {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
