@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import Navbar from "./components/navbar"
 import Footer from "./components/footer"
-import Sidebar from "./components/sidebar"
-import DashNavbar from "./components/dashboard-navbar"
-import "./globals.css"
+import Sidebar from "../components/sidebar"
+import DashNavbar from "../components/dashboard-navbar"
+import "../globals.css"
 
 export const metadata: Metadata = {
   title: "MyShop",

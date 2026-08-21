@@ -5,12 +5,15 @@ import Login from "./login/page";
 import Register from "./register/page";
 import Products from "./components/products";
 import SingleProduct from "./components/single_product";
+import Dashboard from "./dashboard/page";
+
 export default function Home() {
   return (
     <div>
-      <Homes />
+      <Dashboard />
+      {/* <Homes />
       <Category />
-      <HomeProduct /> 
+      <HomeProduct />  */}
       {/* <Login /> */}
       {/* <Register /> */}
       {/* <SingleProduct /> */}
